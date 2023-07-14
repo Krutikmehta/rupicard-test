@@ -81,7 +81,12 @@ export default function Home() {
       </div>
       <div className={styles.rewardsContainer}>
         {REWARDS_DATA.map((data, index) => (
-          <Reward text={data.text} isReversed={index & 1} img={data.img} />
+          <Reward
+            text={data.text}
+            isReversed={index & 1}
+            img={data.img}
+            key={index}
+          />
         ))}
       </div>
     </main>
