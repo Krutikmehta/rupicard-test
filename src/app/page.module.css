@@ -159,6 +159,41 @@
   height: 100%;
   width: 100%;
 }
+.descriptionWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.description{
+  margin: 20vh;
+  color: #9ea7ae;
+  font-size: 2.5rem;
+  width: 60%;
+  font-weight: 400;
+}
+.description strong{
+  color: black;
+  font-weight: 550;
+}
+.downArrowContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+  background:linear-gradient(140.86deg, #65ECD8 11.07%, #FDEF78 80.28%);
+  margin-bottom: 10vh;
+}
+
+.downArrow img{
+  rotate: 90deg;
+  height: 10vh;
+  width: 10vh;
+}
 
 @media screen and (max-aspect-ratio: 13/9){
   .payCheck{
@@ -203,6 +238,7 @@
     bottom: 0;
     left: 0;
     padding: 2vh 2vw;
+    z-index: 10;
   }
   .applyNowContainer{
     display: flex;
@@ -227,6 +263,24 @@
   .rightArrow img{
     width: 4vw;
     height: 3vh;
+  }
+  .descriptionWrapper{
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .description{
+    margin: 5vh 5vw;
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .downArrowContainer{
+    height: 10vh;
+    width: 10vh;
+    margin: 0 5vw
+  }
+  .downArrow img{
+    height: 6vh;
+    width: 6vh;
   }
 
 }

@@ -64,6 +64,19 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className={styles.descriptionWrapper}>
+        <div className={styles.description}>
+          <strong>Earn 1% assured cashback</strong> on your spends. Get{" "}
+          <strong>5X more value than cashback</strong> at the Uni Store. Enjoy
+          round the clock<strong> Whatsapp support.</strong> And it's{" "}
+          <strong>lifetime free</strong>; no joining fee, no annual charges.
+        </div>
+        <div className={styles.downArrowContainer}>
+          <div className={styles.downArrow}>
+            <img src="/icons/arrow.svg" />
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
