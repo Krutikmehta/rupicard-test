@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Reward from "@/components/Reward";
+import { REWARDS_DATA } from "@/utils/constants";
 
 export default function Home() {
   return (
@@ -76,6 +78,11 @@ export default function Home() {
             <img src="/icons/arrow.svg" />
           </div>
         </div>
+      </div>
+      <div className={styles.rewardsContainer}>
+        {REWARDS_DATA.map((data, index) => (
+          <Reward text={data.text} isReversed={index & 1} img={data.img} />
+        ))}
       </div>
     </main>
   );
