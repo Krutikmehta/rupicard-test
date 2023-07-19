@@ -1,7 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Reward from "@/components/Reward";
-import { REWARDS_DATA } from "@/utils/constants";
+import {
+  ADDED_BENEFITS_DATA,
+  ADVANTAGES_DATA,
+  REWARDS_DATA,
+} from "@/utils/constants";
+import Advantages from "@/components/Advantages";
+import Bubbles from "@/components/Bubbles";
 
 export default function Home() {
   return (
@@ -88,6 +94,81 @@ export default function Home() {
             key={index}
           />
         ))}
+        <div className={styles.rewardsTextWrapper}>
+          <div className={styles.rewardsText1}>
+            Lifetime <span>free.</span> No joining fee. No annual charges.
+          </div>
+        </div>
+      </div>
+      <div className={styles.advantagesWrapper}>
+        <div className={styles.cicleContainer}>
+          <img src="images/circle.png" />
+        </div>
+        {ADVANTAGES_DATA.map((data, index) => (
+          <Advantages text={data.text} img={data.img} key={index} />
+        ))}
+      </div>
+      <div className={styles.addedBenefitsContainer}>
+        {ADDED_BENEFITS_DATA.map((data, index) => (
+          <Bubbles text={data.text} img={data.img} key={index} />
+        ))}
+      </div>
+      <div className={styles.commitmentContainer}>
+        <div className={styles.commitmentText}>
+          At Uni, we're committed to{" "}
+          <span>delivering an unmatched credit experience </span>
+          for millions of Indians.
+        </div>
+        <div className={styles.bankPartnerText}>
+          On this mission, we've partnered with some of the best in the
+          business.
+        </div>
+        <img src="images/SBM.svg"></img>
+      </div>
+      <div className={styles.disclaimerContainer}>
+        <div className={styles.disclaimerText}>
+          Please note that to stay compliant with RBI guidelines, we have
+          discontinued Pay 1/3rd and Pay 1/2 cards for the time being.
+        </div>
+      </div>
+      <div className={styles.downloadContainer}>
+        <div>Download now to get started</div>
+        <div className={styles.downloadLinksContainer}>
+          <div className={styles.downloadLink}>Google Play</div>
+          <div className={styles.downloadLink}>App Store</div>
+        </div>
+      </div>
+      <div className={styles.securityContainer}>
+        Uni maintains the highest level of security standards
+        <img src="/images/pcidss_cert.svg" />
+      </div>
+      <div className={styles.footer}>
+        <div className={styles.footerInnerWrapper}>
+          <div className={styles.footerInner}>
+            <div className={styles.footerLogo}>UNI</div>
+            <div>
+              Indiqube Sigma No.3/B, Nexus {"\n"}
+              Koramangala 3rd Block SBI Colony,{"\n"}
+              Koramangala, Bengaluru, Karnataka 560034
+            </div>
+            <div>
+              Contact Us: 080 68216821 {"\n"}
+              Email: care@uni.club
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.footerLinks}>
+        <div className={styles.socialLinks}>
+          {["Instagram", "LinkedIn", "Twitter", "Facebook", "Careers"].map(
+            (item) => (
+              <div>{item}</div>
+            )
+          )}
+        </div>
+        <div>
+          Credit Card KFS | Credit Card T&Cs | Uni T&Cs | Lending Partner TnCs
+        </div>
       </div>
     </main>
   );

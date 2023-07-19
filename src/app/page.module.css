@@ -200,6 +200,198 @@
   flex-direction: column;
   background-color: white;
 }
+.rewardsTextWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.rewardsText1{
+  margin: 20vh;
+  color:black;
+  font-size: 2.5rem;
+  width: 45%;
+  line-height: 2.7rem;
+  text-align: center;
+  font-weight: 500;
+}
+.rewardsText1 span{
+  color: #65ECD8;
+}
+.addedBenefitsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin-bottom: 10vh;
+}
+.commitmentContainer{
+  height:70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(34, 38, 39, 0.7);
+  row-gap: 3.7vh;
+}
+.commitmentText{
+  width: 60%;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.commitmentText span{
+  background:  linear-gradient(140.86deg, #65ECD8 11.07%, #FDEF78 80.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bankPartnerText{
+  width: 27%;
+  line-height: 1.4rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+.commitmentContainer img {
+  height: 20vh;
+  width: 20vh;
+  object-fit: contain;
+}
+.disclaimerContainer{
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disclaimerText{
+  width: 30%;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+.downloadContainer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background:  linear-gradient(140.86deg, #65ECD8 11.07%, #FDEF78 80.28%);
+  color:black;
+  font-weight: 500;
+  font-size: 1.5rem;
+  height: 35vh;
+  gap:4vw
+}
+.downloadLinksContainer{
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  gap:1vw;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.downloadLink{
+  width:10vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-color: black;
+  border-radius: 10px;
+}
+.securityContainer{
+  display: flex;
+  width: 100%;
+  background-color: rgba(34,34,34,1);
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  color:rgba(141,141,149,1);
+  font-size: 0.7rem;
+  gap:1vw
+}
+.securityContainer img{
+  height: 8vh;
+  width: 8vh;
+  object-fit: contain;
+}
+.footer{
+  display: flex;
+  width: 100vw;
+  height:40vh;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color:rgba(141,141,149,1);;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.footerLogo{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+}
+.footerInnerWrapper{
+  width: 70vw;
+  row-gap: 2vh;
+  display: flex;
+  padding-bottom: 8vh;
+  flex-direction: column;
+  white-space: pre-wrap;
+  padding-bottom: 1px;
+  position: relative;
+  background:  linear-gradient(140.86deg, #65ECD8 11.07%, #FDEF78 80.28%);;
+}
+.footerInner{
+  width: 70vw;
+  row-gap: 2vh;
+  display: flex;
+  flex-direction: column;
+  white-space: pre-wrap;
+  z-index: 10;
+  padding-bottom: 8vh;
+  background-color: black;
+}
+.footerLinks{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 300;
+  height: 10vh;
+
+}
+.socialLinks{
+  display: flex;
+  column-gap: 1vw;
+}
+.advantagesWrapper{
+  display: flex;
+  flex-direction: column;
+}
+.cicleContainer{
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 395%;
+}
+.cicleContainer img{
+  position: absolute;
+
+  height: 130vh;
+  width: 130vh;
+  object-fit: contain;
+  /* background-color: red; */
+}
 @media screen and (max-aspect-ratio: 13/9){
   .payCheck{
     display: none;
