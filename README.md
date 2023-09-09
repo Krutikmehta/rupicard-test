@@ -1,5 +1,5 @@
 ## Unicards clone
-This is an clone of the [unicards]() website  
+This is an clone of the unicards website  
 original website - [link](https://www.uni.cards/)  
 clone - [link](https://unicards-clone.vercel.app/)
 
